@@ -1,14 +1,18 @@
 package electricity_bill;
 
-import java.util.Scanner;
+import java.util.Scanner;  // Importing java.util package for the use of scanner class.
 
 public class Main {
+
+	// Declaring Variables for calculations of units
 	
-	long currentUnits;     // Declaring Variables for calculations of units
+	long currentUnits;     
 	long prevMonthUnits;
 	long units;
 
-	public long units(long currentUnits, long prevMonthUnits) // Method to calculate units to pay for
+	// Method to calculate units which takes two parameter.
+	
+	public long units(long currentUnits, long prevMonthUnits) 
 	{
 		units = currentUnits - prevMonthUnits;
 		return units;
@@ -48,8 +52,9 @@ public class Main {
 		System.out.println("Press 3 for Exit");
 		
 		System.out.println("Enter Number of your Type of Connection");
-		int type = sc.nextInt();
-		while (true) {
+		int type = sc.nextInt();  // Creating Object Of Scanner Class.
+		while (true)  
+		{
 			
 			if (type == 1) {
 
